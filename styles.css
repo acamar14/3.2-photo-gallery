@@ -1,0 +1,359 @@
+html{
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size:3em;
+    margin:0 auto;
+    background-color: #fff;
+    color:#007d7b;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+h2{
+    font-size: 2em;
+    color: #000;
+    text-transform: uppercase;
+}
+p{
+    font-size: 1.25em;
+    color: #000;
+}
+figcaption, label, input, small{
+    font-size: 1em;
+}
+
+nav a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    padding:5px;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+nav{
+    justify-content: right;
+    text-align: right;
+    padding: 10px;
+    position:relative;
+    background-color: #000;
+}
+
+[href="#top"]{
+    position: fixed;
+    color: #000;  
+    bottom: 0px;
+}
+
+#about{
+    padding: 1px;
+}
+
+#about h2, #gallery h2{
+    text-align: center;
+}
+
+figure{
+    float: left;
+    width:420px;
+    height:300px;
+    text-align: center;
+    height: 300px;
+    margin: auto;
+    padding:6px;
+}
+figure.long{
+    height: 650px;
+}
+
+.white{
+    color: #fff;
+}
+.black{
+    color: #000;
+}
+.top-center{
+    position: relative;
+    top:-270px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.long > .top-center {
+    top: -620px;
+}
+.long > .bottom-center {
+    bottom: 40px;
+}
+.bottom-center{
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+#contact{
+    clear:both;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1px;
+}
+
+#contact h2, #contact p{
+color: #fff;
+}
+
+
+#contact>h2{
+    text-transform: uppercase;
+}
+
+form h2{
+    visibility: hidden;
+    font-size: small;
+}
+form{
+    display: inline-block;
+    padding: 3px;
+}
+
+input{
+    width:900px;
+    color: #007d7b;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 6px;
+}
+label{
+    display: block;
+    text-align: left;
+    padding: 6px;
+}
+
+::placeholder{
+    color: #007d7b;
+    font-weight: bold;
+}
+
+#submit{
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #007d7b;
+    padding: 5px;
+    width:550px;
+}
+
+#contact div{
+    padding: 10px;
+}
+
+footer{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+ /* @media screen and (min-width:485px){
+    h1{
+        font-size:3em;
+        margin:0 auto;
+        background-color: white;
+        color:#007d7b;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    nav{
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        position:relative;
+        background-color: #000;
+    }
+    [href="#top"]{
+        position: fixed;
+        color: #000;  
+        bottom: 0px;
+        visibility:initial;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fff;
+        min-width: 485px;
+        margin: auto;
+        justify-content: center;
+
+    }
+
+    #photo-gallery{
+        /* min-width:485px;
+        height:300px;
+        text-align: center;
+        justify-content: center;
+        height: 300px;
+        margin: auto;
+        padding:8px; */
+        /* display: grid;
+        grid-template-columns:1fr;
+    } */
+
+    /* form{
+
+        display: inline-block;
+        padding: 3px;
+    }  */
+
+    /* input{
+         width:400px;  
+        color: #007d7b;
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 6px;
+    } */
+
+    /* label{
+        display: block;
+        text-align: left;
+        padding: 6px;
+    }
+
+    ::placeholder{
+        color: #007d7b;
+        font-weight: bold;
+    } 
+
+    #submit{
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+        background-color: #007d7b;
+        padding: 5px;
+        width:300px;
+    }
+
+    #contact div{
+        padding: 10px;
+    }
+
+     footer{
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #000;
+        padding-top: 30px;
+        text-align: center;
+    } 
+
+} */ 
+/* @media screen and (min-width:880px){
+    h1{
+        font-size:3em;
+        margin:0 auto;
+        background-color: white;
+        color:#007d7b;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    nav{
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        position:relative;
+        background-color: #000;
+    }
+    [href="#top"]{
+        position: fixed;
+        color: #000;  
+        bottom: 0px;
+        visibility:initial;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fff;
+        min-width: 485px;
+        margin: auto;
+        justify-content: center;
+
+    } */
+
+    /* #photo-gallery{
+        min-width:485px;
+        height:300px;
+        text-align: center;
+        justify-content: center;
+        height: 300px;
+        margin: auto;
+        padding:8px; 
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    } */
+
+    /* form{
+
+        display: inline-block;
+        padding: 3px;
+    }  */
+
+    /* input{
+         width:400px;  
+        color: #007d7b;
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 6px;
+    } */
+
+    /* label{
+        display: block;
+        text-align: left;
+        padding: 6px;
+    }
+
+    ::placeholder{
+        color: #007d7b;
+        font-weight: bold;
+    } 
+
+    #submit{
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+        background-color: #007d7b;
+        padding: 5px;
+        width:300px;
+    }
+
+    #contact div{
+        padding: 10px;
+    } */
+
+    /* footer{
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #000;
+        padding-top: 30px;
+        text-align: center;
+    } */
+
+/* } */
