@@ -1,24 +1,24 @@
-html{
+ html{
     background-color: #000;
-    box-sizing: border-box;
-}
+    box-sizing: border-box; 
+}  
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
-    max-width: 1300px;
+    min-width: 485px;
     margin: 0 auto;
 }
 
 h1{
     font-size:3em;
-    margin:0 auto;
+    margin:auto;
+    text-align: center;
     background-color: #fff;
     color:#007d7b;
     padding-bottom: 10px;
     text-transform: uppercase;
+    max-width: 485px;
 }
-
 
 h2{
     font-size: 2em;
@@ -29,6 +29,7 @@ p{
     font-size: 1.25em;
     color: #000;
 }
+
 figcaption, label, input, small{
     font-size: 1em;
 }
@@ -37,27 +38,34 @@ nav a{
     font-size: 1.5em;
     text-decoration: none;
     color: #fff;
-    padding:5px;
-}
-
-nav li{
-    list-style-type: none;
-    display: inline-block;
-    text-transform: uppercase;
+    padding:10px;
 }
 
 nav{
-    justify-content: right;
-    text-align: right;
+    text-align: center;
     padding: 10px;
     position:relative;
     background-color: #000;
+    text-transform: uppercase;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+main{
+    background-color: #fff;
+    color:#000;
+    max-width: 485px;
+    margin: 0 auto;
 }
 
 [href="#top"]{
-    position: fixed;
     color: #000;  
     bottom: 0px;
+    right: 0px;
+    position: fixed;
 }
 
 #about{
@@ -67,15 +75,24 @@ nav{
 #about h2, #gallery h2{
     text-align: center;
 }
+#about p, #gallery p {
+    line-height:30px;
+}
+.photos{
+    min-width:485px;
+    height:300px; 
+    margin: 0 auto; 
+    padding:8px;
+    display: grid;
+    grid-template-columns:1fr;
+}   
 
 figure{
-    float: left;
     width:420px;
     height:300px;
     text-align: center;
-    height: 300px;
-    margin: auto;
-    padding:6px;
+    margin: 0 auto;
+    padding: 6px;
 }
 figure.long{
     height: 650px;
@@ -87,6 +104,7 @@ figure.long{
 .black{
     color: #000;
 }
+
 .top-center{
     position: relative;
     top:-270px;
@@ -98,8 +116,9 @@ figure.long{
     top: -620px;
 }
 .long > .bottom-center {
-    bottom: 40px;
+    bottom: 30px;
 }
+
 .bottom-center{
     position: relative;
     bottom: 50px;
@@ -107,7 +126,6 @@ figure.long{
     text-transform: uppercase;
 
 }
-
 
 #contact{
     clear:both;
@@ -118,7 +136,7 @@ figure.long{
 }
 
 #contact h2, #contact p{
-color: #fff;
+    color: #fff;
 }
 
 
@@ -130,22 +148,27 @@ form h2{
     visibility: hidden;
     font-size: small;
 }
+
 form{
     display: inline-block;
-    padding: 3px;
+    padding: 5px;
 }
 
 input{
-    width:900px;
-    color: #007d7b;
-    font-size: 1em;
-    text-transform: uppercase;
-    padding: 6px;
-}
+   display: block;
+   width:400px;  
+   height: 2.3rem;
+   color: #007d7b;
+   font-size: 1em;
+   text-transform: uppercase;
+} 
+
 label{
     display: block;
+   margin: auto 0;
+    width:400px;
+    padding: 5px;
     text-align: left;
-    padding: 6px;
 }
 
 ::placeholder{
@@ -153,13 +176,14 @@ label{
     font-weight: bold;
 }
 
-#submit{
+[type="submit"]{
     text-align: center;
-    border-radius: 10px;
+    margin: 0 auto;
+    border-radius: 15px;
     color: #fff;
     background-color: #007d7b;
     padding: 5px;
-    width:550px;
+    width:300px;
 }
 
 #contact div{
@@ -170,190 +194,98 @@ footer{
     text-transform: uppercase;
     color: #fff;
     background-color: #000;
-    padding-top: 30px;
+    padding-top: 40px;
     text-align: center;
 
 }
 
- /* @media screen and (min-width:485px){
-    h1{
-        font-size:3em;
-        margin:0 auto;
-        background-color: white;
-        color:#007d7b;
-        padding-bottom: 10px;
+@media screen and (min-width:880px){
+
+    body, h1, nav{
+        max-width: 880px;
+    }
+
+    main{
+        max-width: 880px;
+    }
+
+    figure{
+        float: left;
         text-align: center;
-    }
-    nav{
-        justify-content: center;
-        text-align: center;
-        padding: 10px;
-        position:relative;
-        background-color: #000;
-    }
-    [href="#top"]{
-        position: fixed;
-        color: #000;  
-        bottom: 0px;
-        visibility:initial;
+        margin: 0 auto;
+        padding:6px;
     }
 
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #fff;
-        min-width: 485px;
-        margin: auto;
-        justify-content: center;
-
-    }
-
-    #photo-gallery{
-        /* min-width:485px;
-        height:300px;
+    .photos{
+        min-width:880px;
         text-align: center;
         justify-content: center;
-        height: 300px;
-        margin: auto;
-        padding:8px; */
-        /* display: grid;
-        grid-template-columns:1fr;
-    } */
-
-    /* form{
-
-        display: inline-block;
-        padding: 3px;
-    }  */
-
-    /* input{
-         width:400px;  
-        color: #007d7b;
-        font-size: 1em;
-        text-transform: uppercase;
-        padding: 6px;
-    } */
-
-    /* label{
-        display: block;
-        text-align: left;
-        padding: 6px;
-    }
-
-    ::placeholder{
-        color: #007d7b;
-        font-weight: bold;
-    } 
-
-    #submit{
-        text-align: center;
-        border-radius: 10px;
-        color: #fff;
-        background-color: #007d7b;
-        padding: 5px;
-        width:300px;
-    }
-
-    #contact div{
-        padding: 10px;
-    }
-
-     footer{
-        text-transform: uppercase;
-        color: #fff;
-        background-color: #000;
-        padding-top: 30px;
-        text-align: center;
-    } 
-
-} */ 
-/* @media screen and (min-width:880px){
-    h1{
-        font-size:3em;
-        margin:0 auto;
-        background-color: white;
-        color:#007d7b;
-        padding-bottom: 10px;
-        text-align: center;
-    }
-    nav{
-        justify-content: center;
-        text-align: center;
-        padding: 10px;
-        position:relative;
-        background-color: #000;
-    }
-    [href="#top"]{
-        position: fixed;
-        color: #000;  
-        bottom: 0px;
-        visibility:initial;
-    }
-
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #fff;
-        min-width: 485px;
-        margin: auto;
-        justify-content: center;
-
-    } */
-
-    /* #photo-gallery{
-        min-width:485px;
-        height:300px;
-        text-align: center;
-        justify-content: center;
-        height: 300px;
-        margin: auto;
-        padding:8px; 
         display: grid;
         grid-template-columns:1fr 1fr;
-    } */
-
-    /* form{
-
-        display: inline-block;
-        padding: 3px;
-    }  */
-
-    /* input{
-         width:400px;  
-        color: #007d7b;
-        font-size: 1em;
-        text-transform: uppercase;
-        padding: 6px;
-    } */
-
-    /* label{
-        display: block;
-        text-align: left;
-        padding: 6px;
-    }
-
-    ::placeholder{
-        color: #007d7b;
-        font-weight: bold;
     } 
 
-    #submit{
+   input{
+        width:700px;  
+    } 
+
+    label{
+        width: 30px;
+    }
+
+    [type="submit"]{
         text-align: center;
-        border-radius: 10px;
+        border-radius: 15px;
         color: #fff;
         background-color: #007d7b;
         padding: 5px;
-        width:300px;
+        margin: 0 auto;
+        width: 350px;
+    }
+} 
+
+@media screen and (min-width:1300px){
+
+    body, h1, nav{
+        max-width: 1300px;
     }
 
-    #contact div{
+    nav{
+        justify-content: right;
+        text-align: right;
         padding: 10px;
-    } */
-
-    /* footer{
-        text-transform: uppercase;
-        color: #fff;
+        position:relative;
         background-color: #000;
-        padding-top: 30px;
-        text-align: center;
-    } */
+    }
 
-/* } */
+    main{
+        max-width: 1300px;
+    }
+
+    .photos{
+        margin: 0 auto ;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+    } 
+
+    form{
+        display: inline-block;
+        padding: 3px;
+    }  
+
+    input{
+        width:800px;
+    } 
+
+    [type="submit"]{
+        text-align: center;
+        border-radius: 15px;
+        color: #fff;
+        background-color: #007d7b;
+        padding: 5px;
+        width:700px;
+        margin: 0 auto;
+    }
+
+}
+
+ 
